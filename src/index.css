@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DSEG14-Classic';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+  background: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* custom styles */
+@font-face {
+  font-family: 'DSEG14-Classic';
+  src: url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+#drum-base{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine {
+  background-color: #252525;
+  box-shadow: inset 4px -4px 10px 10px rgba(0, 0, 0, 0.103);
+  width: 540px;
+  height: 330px;
+  border-radius: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#display {
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  background-color: #181818;
+  width: 200px;
+  min-height: 60px;
+  padding: 15px;
+  margin-right: 35px;
+  box-shadow: inset 2px -2px 10px 10px rgba(0, 0, 0, 0.432);
+}
+#drum-pads {
+  height: 260px;
+  width: 260px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.drum-pad {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  background-color: #4d4d4d;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: inset 2px -2px 10px 10px rgba(0,0,0,0.2);
+}
